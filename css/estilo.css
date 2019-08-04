@@ -1,0 +1,260 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image:url("../img/fondoA.jpg");
+}
+
+.container-fluid{
+  padding: 0px;
+  display: none;
+}
+
+/*------------------------------------------CARGANDO PAGINA-------------------------------------------------*/
+.loader {
+  height: 100vh;
+  background: url("../img/fondo.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 6;
+  
+}
+
+.logol{
+  width: 400px;
+  height: 275px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -200px;
+  margin-top: -170px;
+}
+
+.load{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -42px;
+  margin-top: 115px
+}
+
+/*-----------------------------------------------MENU---------------------------------------------------*/
+
+.logoC{
+  padding-right: 20px;
+}
+
+.navbar-brand .logoC{
+  height: auto;
+  margin-top: 5px;
+  margin-left: 15px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  vertical-align: top;
+  max-width: 100%;
+  border: 0;
+  float: right;
+}
+
+header{
+  height: 100px;
+  Width: 100%;
+  top:0px;
+  background-size: 100% 100%;
+  background-image: url("../img/cabecera.jpg");
+  background-repeat: no-repeat cover;
+  z-index: 4;
+}
+
+.navbar-brand {
+  padding: 0px;
+}
+
+.nav-item{
+  background-color: rgba(241, 237, 237, 0.925);
+  padding: 5px 10px;
+
+}
+
+.navbar-light .navbar-nav .nav-link {
+  font-size: 22px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bolder;
+
+}
+
+.navbar-nav .dropdown-menu{  
+  background-color: rgba(255, 254, 254, 0.887);
+  padding: 5px 10px;
+
+}
+
+.dropdown-item  {
+  font-size: 22px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ 
+}
+
+/*-------------------------------------------GRILLA DE FOTOS----------------------------------------*/
+
+.row{
+  width: 100%;
+  margin-right: 0px; 
+  margin-left: 0px; 
+}
+
+.grid-foto {
+  background-color: rgba(190, 190, 190, 0.678);
+  font-size: 18px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom:20px;
+  padding-top:20px;
+
+} 
+.img-responsive {  
+  float:left;
+  margin:10px 0.3em;
+  width: 95%;
+  border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -webkit-box-shadow: 1px 2px 5px -1px rgba(0,0,0,0.64);
+  -moz-box-shadow: 1px 2px 5px -1px rgba(0,0,0,0.64);
+  box-shadow: 1px 2px 5px -1px rgba(0,0,0,0.64);
+  
+
+}
+.img-contenedor .img-responsive {
+  -webkit-transition:all .9s ease; /* Safari y Chrome */
+  -moz-transition:all .9s ease; /* Firefox */
+  -o-transition:all .9s ease; /* IE 9 */
+  -ms-transition:all .9s ease; /* Opera */
+  width:100%;
+  }
+  .img-contenedor:hover .img-responsive {
+  -webkit-transform:scale(1.25);
+  -moz-transform:scale(1.25);
+  -ms-transform:scale(1.25);
+  -o-transform:scale(1.25);
+  transform:scale(1.25);
+  }
+  .img-contenedor {/*Ancho y altura son modificables al requerimiento de cada uno*/
+  overflow:hidden;
+  }
+
+@media screen and (max-width:1000px){
+
+  .titulo-grid {
+    margin-left:40%;
+    margin-right:40%;
+    font-family: 'Open sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px; 
+    padding:20px 5px 5px 5px;
+    
+  }
+  .img-responsive {  
+    float:left;
+    padding:  0.3em;
+    width: 100%;
+  
+  }
+
+}
+
+/*-------------------------------------------CAROUSEL----------------------------------------------------*/
+.container{
+ z-index: 3;
+ height: calc(100vh - 100px);
+ max-width: none !important;
+ padding: 0px !important;
+}
+
+
+.d-block {
+  width: 600px;
+  height: 600px;
+}
+.carousel-tex{
+  background-color: #0000003b;
+  font-family: 'magik';
+  color: rgb(255, 255, 255);
+  width: 500px;
+  font-size: 100px;
+  text-shadow: 0 1px 0 #ccc, 
+  0 2px 0 #868585,
+  0 3px 0 rgb(122, 122, 122),
+  0 4px 0 #646363,
+  0 5px 0 rgb(97, 97, 97),
+  0 8px 3px rgba(0, 0, 0, 0.151),
+  0 0 8px rgba(0,0,0,.150),
+  0 3px 5px rgba(0,0,0,.300),
+  0 5px 8px rgba(0,0,0,.200),
+  0 8px 15px rgba(0,0,0,.250),
+  0 15px 15px rgba(0,0,0,.200),
+  0 30px 30px rgba(0,0,0,.1500);
+  text-align: center;
+}
+
+.carousel-img-1 {
+  background: url("../img/foto.jpg") no-repeat center center;
+  background-size: cover;
+  height: calc(100vh - 100px);
+}
+
+.carousel-img-2 {
+  background: url("../img/foto2.jpg") no-repeat center center;
+  background-size: cover;
+  height: calc(100vh - 100px);
+}
+
+.carousel-img-3 {
+  background: url("../img/foto3.jpg") no-repeat center center;
+  background-size: cover;
+  height: calc(100vh - 100px);
+}
+
+/*-----------------------------------PIE DE PAGINA --------------------------------------------------*/
+
+.footer{
+  width: 100%;
+  color: #FFF;
+  background-color: #161616;
+  font-size: 12px;
+  }
+
+  .footer-column {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  }
+
+  .footer-subcolumn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .fa-facebook-f, .fa-instagram, .fa-linkedin-in {
+  background: #FFF;
+  color: #080a0c;
+  font-size: 17px;
+  border-radius: 100px;
+  width: 37px;
+  padding: 10px;
+  margin-left: 2px;
+  margin-right: 2px;
+  display: flex;
+  justify-content: center;
+  }
+
+  .fa-facebook-f:hover, .fa-instagram:hover, .fa-linkedin-in:hover {
+  text-decoration: none;
+  }
